@@ -51,7 +51,7 @@ section {
     background: linear-gradient(to right, transparent 0%, #f4f1f6, transparent 100%) no-repeat;
     background-size: 10%;
     background-position: center;
-    animation: widen 1.5s alternate cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    animation: widen 1s alternate cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 }
 @keyframes widen {
     0% {
