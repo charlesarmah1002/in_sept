@@ -35,5 +35,45 @@
             </div>
         </div>
     </section>
+
+    <script>
+        const days_el = document.getElementById("days");
+        const hours_el = document.getElementById("hours");
+        const mins_el = document.getElementById("minutes");
+        const seconds_el = document.getElementById("seconds");
+
+
+        let new_years = "29 Jan 2023"
+
+        function count_down(){
+            let new_years_date = new Date(new_years);
+            let current_date = new Date();
+
+            let total_seconds = (new_years_date - current_date)/ 1000;
+
+            let days = Math.floor(total_seconds / 3600 / 24);
+            let hours = Math.floor(total_seconds/ 3600) % 24;
+            let minutes= Math.floor(total_seconds / 60)  % 60;
+            let seconds= Math.floor(total_seconds)  % 60;
+
+
+            if(days < 10){days = '0' + days};
+            if(hours < 10){hours = '0' + hours};
+            if(minutes < 10){minutes = '0' + minutes};
+            if(seconds < 10){seconds = '0' + seconds};
+
+
+            days_el.innerHTML = days;
+            hours_el.innerHTML = hours;
+            mins_el.innerHTML = minutes;
+            seconds_el.innerHTML = seconds;
+
+        }
+
+        count_down();
+
+
+        setInterval(count_down,1000);
+    </script>
 </body>
 </html>

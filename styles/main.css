@@ -48,12 +48,3 @@ section {
 .container div:nth-child(2) {
     font-weight: 700;
 }
-#seconds {
-    animation: count-down 1s alternate ease;
-    animation-iteration-count: infinite;
-}
-@keyframes count-down {
-    0% {
-        transform: translateY(-20px);
-    }
-}
