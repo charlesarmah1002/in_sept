@@ -46,7 +46,6 @@ section {
     left: 0;
     z-index: 2;
     height: 10px;
-    border-radius: 10px;
     content: '';
     background: linear-gradient(to right, transparent 0%, #f4f1f6, transparent 100%) no-repeat;
     background-size: 10%;
